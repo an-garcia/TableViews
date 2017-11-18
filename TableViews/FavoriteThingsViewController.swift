@@ -8,8 +8,18 @@
 
 import UIKit
 
-class FavoriteThingsViewController: UIViewController {
+class FavoriteThingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    // MARK: Model
+    let favoriteThings = [
+        "Raindrops on roses",
+        "Whiskers on kittens",
+        "Bright copper kettles",
+        "Warm woolen mittens",
+        "Chocolate milk with bread"
+    ]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,6 +41,26 @@ class FavoriteThingsViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    // MARK: Table View Data Source Methods
+    
+    // number of rows
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return self.favoriteThings.count
+    }
+    
+    // cell for row at index path
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteThingCell")!
+        let favoriteThingForRow = self.favoriteThings[(indexPath as NSIndexPath).row]
+        cell.textLabel?.text = favoriteThingForRow
+        
+        return cell
+        
+    }
 
     @IBAction func dismiss(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
