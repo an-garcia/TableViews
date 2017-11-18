@@ -14,6 +14,7 @@
 		829CDC981FC08A5200E16E44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829CDC961FC08A5200E16E44 /* LaunchScreen.storyboard */; };
 		829CDCA01FC08D5500E16E44 /* FavoriteThingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829CDC9F1FC08D5500E16E44 /* FavoriteThingsViewController.swift */; };
 		829CDCA21FC09EAA00E16E44 /* DoReMiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829CDCA11FC09EAA00E16E44 /* DoReMiViewController.swift */; };
+		829CDCA41FC0A97C00E16E44 /* VillainsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829CDCA31FC0A97C00E16E44 /* VillainsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		829CDC991FC08A5200E16E44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		829CDC9F1FC08D5500E16E44 /* FavoriteThingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteThingsViewController.swift; sourceTree = "<group>"; };
 		829CDCA11FC09EAA00E16E44 /* DoReMiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoReMiViewController.swift; sourceTree = "<group>"; };
+		829CDCA31FC0A97C00E16E44 /* VillainsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillainsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				829CDC8D1FC08A5200E16E44 /* AppDelegate.swift */,
 				829CDC8F1FC08A5200E16E44 /* MainViewController.swift */,
+				829CDCA31FC0A97C00E16E44 /* VillainsViewController.swift */,
 				829CDCA11FC09EAA00E16E44 /* DoReMiViewController.swift */,
 				829CDC9F1FC08D5500E16E44 /* FavoriteThingsViewController.swift */,
 				829CDC911FC08A5200E16E44 /* Main.storyboard */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				829CDCA21FC09EAA00E16E44 /* DoReMiViewController.swift in Sources */,
+				829CDCA41FC0A97C00E16E44 /* VillainsViewController.swift in Sources */,
 				829CDC901FC08A5200E16E44 /* MainViewController.swift in Sources */,
 				829CDCA01FC08D5500E16E44 /* FavoriteThingsViewController.swift in Sources */,
 				829CDC8E1FC08A5200E16E44 /* AppDelegate.swift in Sources */,
