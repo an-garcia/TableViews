@@ -8,8 +8,46 @@
 
 import UIKit
 
-class DoReMiViewController: UIViewController {
+class DoReMiViewController: UIViewController, UITableViewDataSource {
 
+    // MARK: Properties
+    
+    // Use this string property as your reuse identifier,
+    // Storyboard has been set up for you using this String.
+    let cellReuseIdentifier = "MyCellReuseIdentifier"
+    
+    // Choose some data to show in your table
+    
+    let model: [String] = [
+        // TODO: Fill this array with data
+        "Do",
+        "Re",
+        "Mi",
+        "Fa",
+        "So",
+        "La",
+        "Te"
+    ]
+    
+    // MARK: UITableViewDataSource
+    
+    // Add the two essential table data source methods here
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //TODO: Implement method to return the correct number of rows.
+        return self.model.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //TODO: Implement method to return cell with the correct reuseidentifier and populated with the correct data.
+        let placeholderCell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier)!
+        let favoriteThingForRow = self.model[(indexPath as NSIndexPath).row]
+        placeholderCell.textLabel?.text = favoriteThingForRow
+        
+        return placeholderCell
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
