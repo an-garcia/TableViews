@@ -15,6 +15,7 @@
 		829CDCA01FC08D5500E16E44 /* FavoriteThingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829CDC9F1FC08D5500E16E44 /* FavoriteThingsViewController.swift */; };
 		829CDCA21FC09EAA00E16E44 /* DoReMiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829CDCA11FC09EAA00E16E44 /* DoReMiViewController.swift */; };
 		829CDCA41FC0A97C00E16E44 /* VillainsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829CDCA31FC0A97C00E16E44 /* VillainsViewController.swift */; };
+		829CDCA61FC0AB7A00E16E44 /* Villain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829CDCA51FC0AB7A00E16E44 /* Villain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		829CDC9F1FC08D5500E16E44 /* FavoriteThingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteThingsViewController.swift; sourceTree = "<group>"; };
 		829CDCA11FC09EAA00E16E44 /* DoReMiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoReMiViewController.swift; sourceTree = "<group>"; };
 		829CDCA31FC0A97C00E16E44 /* VillainsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillainsViewController.swift; sourceTree = "<group>"; };
+		829CDCA51FC0AB7A00E16E44 /* Villain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Villain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				829CDC8D1FC08A5200E16E44 /* AppDelegate.swift */,
 				829CDC8F1FC08A5200E16E44 /* MainViewController.swift */,
+				829CDCA51FC0AB7A00E16E44 /* Villain.swift */,
 				829CDCA31FC0A97C00E16E44 /* VillainsViewController.swift */,
 				829CDCA11FC09EAA00E16E44 /* DoReMiViewController.swift */,
 				829CDC9F1FC08D5500E16E44 /* FavoriteThingsViewController.swift */,
@@ -150,6 +153,7 @@
 				829CDC901FC08A5200E16E44 /* MainViewController.swift in Sources */,
 				829CDCA01FC08D5500E16E44 /* FavoriteThingsViewController.swift in Sources */,
 				829CDC8E1FC08A5200E16E44 /* AppDelegate.swift in Sources */,
+				829CDCA61FC0AB7A00E16E44 /* Villain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

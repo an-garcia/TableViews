@@ -1,9 +1,10 @@
 # TableViews
 
 
-![Scheme](/screenshots/SimulatorScreenShot-iPhone8Plus-2017-11-18at12.49.26.png)
+![Scheme](/screenshots/SimulatorScreenShot-iPhone8Plus-2017-11-18at13.29.28.png)
 ![Scheme](/screenshots/SimulatorScreenShot-iPhone8Plus-2017-11-18at11.26.25.png)
 ![Scheme](/screenshots/SimulatorScreenShot-iPhone8Plus-2017-11-18at12.33.03.png)
+![Scheme](/screenshots/SimulatorScreenShot-iPhone8Plus-2017-11-18at13.29.21.png)
 
 
 TableViews is an iOS sample application that shows different implementations using Tables.
