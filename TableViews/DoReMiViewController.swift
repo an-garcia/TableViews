@@ -18,15 +18,14 @@ class DoReMiViewController: UIViewController, UITableViewDataSource {
     
     // Choose some data to show in your table
     
-    let model: [String] = [
-        // TODO: Fill this array with data
-        "Do",
-        "Re",
-        "Mi",
-        "Fa",
-        "So",
-        "La",
-        "Te"
+    let model = [
+        ["text" : "Do", "detail" : "Documents falling from the sky."],
+        ["text" : "Re", "detail" : "Releasing people from the hospital."],
+        ["text" : "Mi", "detail" : "Mission impossible 3."],
+        ["text" : "Fa", "detail" : "Favorites things to do."],
+        ["text" : "So", "detail" : "So, you got some money?"],
+        ["text" : "La", "detail" : "Latter, I will go for some cake."],
+        ["text" : "Ti", "detail" : "Tim Hortons is open until midnight."]
     ]
     
     // MARK: UITableViewDataSource
@@ -40,11 +39,13 @@ class DoReMiViewController: UIViewController, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //TODO: Implement method to return cell with the correct reuseidentifier and populated with the correct data.
-        let placeholderCell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier)!
-        let favoriteThingForRow = self.model[(indexPath as NSIndexPath).row]
-        placeholderCell.textLabel?.text = favoriteThingForRow
+        let cell =  tableView.dequeueReusableCell(withIdentifier: self.cellReuseIdentifier)!
+        let dictionary = self.model[(indexPath as NSIndexPath).row]
         
-        return placeholderCell
+        cell.textLabel?.text = dictionary["text"]
+        cell.detailTextLabel?.text = dictionary["detail"]
+        
+        return cell
     }
     
     
